@@ -1,6 +1,42 @@
 $(document).ready(function() {
 	new WOW().init();
 
+
+  $('.slider_banner').slick({
+    dots: false,
+    slidesToShow: 1,
+    arrows: true,
+    autoplay: false,/*
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next2.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next1.png' alt=''></button>",
+    */responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+    ]
+  });
+
+  $('.slider_sp3').slick({
+    dots: false,
+    slidesToShow: 4,
+    arrows: true,
+    autoplay: false,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next2.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next1.png' alt=''></button>",
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+    ]
+  });
+
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.icon_backtotop').fadeIn();
@@ -151,3 +187,4 @@ var TabPictureView = {
 }
 
 TabPictureView.setClickLibraryPicture();
+
