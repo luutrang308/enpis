@@ -36,6 +36,89 @@ $(document).ready(function() {
     ]
   });
 
+  $('input.input-qty').each(function() {
+    var $this = $(this),
+      qty = $this.parent().find('.is-form'),
+      min = Number($this.attr('min')),
+      max = Number($this.attr('max'))
+    if (min == 0) {
+      var d = 0
+    } else d = min
+    $(qty).on('click', function() {
+      if ($(this).hasClass('minus')) {
+        if (d > min) d += -1
+      } else if ($(this).hasClass('plus')) {
+        var x = Number($this.val()) + 1
+        if (x <= max) d += 1
+      }
+      $this.attr('value', d).val(d)
+    })
+  });
+
+  $('.btn_tracuu').click(function() {
+    $('.form_thongtin_popup').addClass('active');
+  });
+  $('.close_popup').click(function() {
+    $('.form_thongtin_popup').removeClass('active');
+  });
+  $('.btn_xem').click(function() {
+    $('.form_xemthongtin').addClass('active');
+  });
+  $('.close_popup').click(function() {
+    $('.form_xemthongtin').removeClass('active');
+  });
+
+  $('.slider_news_tinmoi').slick({
+    dots: false,
+    slidesToShow: 1,
+    arrows: true,
+    autoplay: false,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next2.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next1.png' alt=''></button>",
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+    ]
+  });
+  $('.slider_baiviet').slick({
+    dots: false,
+    slidesToShow: 1,
+    arrows: true,
+    autoplay: false,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next2.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next1.png' alt=''></button>",
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+    ]
+  });
+
+  $('.element_slider_video').slick({
+    dots: false,
+    slidesToShow: 1,
+    arrows: true,
+    autoplay: false,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next2.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next1.png' alt=''></button>",
+  });
+
+  $('.item_video .box_img .img').click(function() {
+    $(this).css('display','none');
+  });
+
+  $('.faq_box .item').click(function() {
+    $(this).toggleClass('active');
+    $('.faq_box .item').not($(this)).removeClass('active');
+  })
+
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
