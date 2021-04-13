@@ -117,7 +117,31 @@ $(document).ready(function() {
   $('.faq_box .item').click(function() {
     $(this).toggleClass('active');
     $('.faq_box .item').not($(this)).removeClass('active');
-  })
+  }); 
+
+  $('.form_donhangdamua tr').click(function() {
+    $(this).addClass('active');
+  });
+
+  $('.slider_for_pro').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: '.slider_nav_pro'
+  });
+  $('.slider_nav_pro').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider_for_pro',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
+
+
+
+
 
 
   $(window).scroll(function() {
