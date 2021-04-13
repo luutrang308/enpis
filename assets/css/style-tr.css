@@ -4526,6 +4526,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   color: #003F57;
 }
 .site34_Prodel2_col6_thongtinsp .masp {
+  margin-top: 15px;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -4564,6 +4565,9 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   top: 50%;
   transform: translate(0, -50%);
   background: #ADADAD;
+}
+.site34_Prodel2_col6_thongtinsp .price_pro {
+  margin-top: 15px;
 }
 .site34_Prodel2_col6_thongtinsp .price_pro p {
   font-family: Chakra Petch;
