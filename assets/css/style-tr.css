@@ -2435,7 +2435,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   transition: 0.5s;
 }
 .item_new_listtin_tinmoi .content {
-  width: 50%;
+  width: 67%;
   float: left;
   padding-left: 30px;
 }
@@ -3083,6 +3083,10 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   filter: invert(1);
 }
 
+.date {
+  display: flex;
+  align-items: center;
+}
 .date img {
   width: 15px;
   float: left;
@@ -3119,7 +3123,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   background: rgba(0, 63, 87, 0.5);
   transform: rotateZ(15deg);
   right: -3px;
-  top: 4px;
+  top: 7px;
 }
 
 /* site34_form_col6_guiycdenenpis */

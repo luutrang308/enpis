@@ -2565,7 +2565,7 @@ form.thongtinthanhtoan {
 		}
 	}
 	.content {
-		width: 50%;
+		width: 67%;
 		float: left;
 		padding-left: 30px;
 		.date {
@@ -3260,6 +3260,8 @@ form.thongtinthanhtoan {
 }
 
 .date {
+	display: flex;
+	align-items: center;
 	img {
 		width: 15px;
 	    float: left;
@@ -3296,7 +3298,7 @@ form.thongtinthanhtoan {
 			    background: rgba(0, 63, 87, 0.5);
 			    transform: rotateZ(15deg);
 			    right: -3px;
-			    top: 4px;
+			    top: 7px;
 			}
 		}
 	}
