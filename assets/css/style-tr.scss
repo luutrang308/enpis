@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p {
 input , textarea {
 	&:focus {
 		outline: 0;
-		&::placeholer {
+		&::placeholder {
 			opacity: 0;
 		}
 	}
@@ -118,6 +118,16 @@ select , a , button {
 		justify-content: flex-end;
 		align-items: center;
 	}
+}
+
+.main_menu.fixed_main_menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+    background: #fff;
+    box-shadow: 0 5px 10px #0000002b;
 }
 
 .logo_34 {
@@ -303,7 +313,7 @@ select , a , button {
 	h2 {
 		font-family: Chakra Petch;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: bold;
 		font-size: 36px;
 		line-height: 47px;
 		color: #003F57;
@@ -838,7 +848,7 @@ select , a , button {
 	right: 25px;
 	bottom: 100px;
 	display: grid;
-	z-index: 100;
+	z-index: 50;
 	a {
 		text-align: center;
 		display: block;
@@ -1300,10 +1310,14 @@ select , a , button {
 /* site34_cart1_col12_giohang */
 .site34_cart {
 	padding: 50px 0;
+	overflow: hidden;
 }
 
 .site34_cart1_col12_giohang {
 	margin-top: 70px;
+	> form {
+		width: 100%;
+	}
 	table {
 		width: 100%;
 		tr {
@@ -1605,6 +1619,7 @@ form.thongtinthanhtoan {
 		margin-top: 0;
 		width: 100%;
 		table {
+			width: 100%;
 			tr.item_sum {
 				td {
 					p {
@@ -1903,6 +1918,9 @@ form.thongtinthanhtoan {
 }
 
 /* site34_new_col12_tinmoi */
+.site34_new_col12_tinmoi {
+	overflow: hidden;
+}
 
 .title_img {
 	display: flex;
@@ -2061,6 +2079,10 @@ form.thongtinthanhtoan {
 	}
 }
 /* site34_video_col12_video */
+.site34_video_col12_video {
+	overflow: hidden;
+}
+
 .title_img {
 	.btn_xemthem {
 		font-family: Chakra Petch;
@@ -2860,6 +2882,7 @@ form.thongtinthanhtoan {
 }
 .site34_html_col9_csbh {
 	padding: 50px 70px;
+	overflow: hidden;
 }
 
 /* site34_menu_col9_hoidap */
@@ -3958,6 +3981,7 @@ form.thongtinthanhtoan {
 .site34_form_col12_thongtintaikhoan {
 	background: #F6F6F6;
 	padding: 40px 0 60px 0;
+	overflow: hidden;
 }
 
 /* site34_memu_col3_profile */
@@ -5026,5 +5050,814 @@ font-weight: 300; font-size: 18px; line-height: 23px;
 /* site34_Prodel_col12_motasp */
 .site34_Prodel_col12_motasp {
 	width: 100%;
-	margin-top: 60px;
+	margin: 60px 0 0 0;
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 30px;
+	    border-bottom: 1px solid #E6E7E8;
+	    padding-bottom: 7px;
+		li {
+			margin: 0 18px;
+			position: relative;
+			&:before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 5px;
+				background: transparent;
+				left: 0;
+				bottom: -10px;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+			p {
+				font-family: Chakra Petch;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 24px;
+				line-height: 31px;
+				display: flex;
+				align-items: center;
+				color: #003F57;
+			}
+			&:nth-child(1) {
+				margin-left: 0;
+			}
+		}
+		li.active {
+			p {
+				font-family: Chakra Petch;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 31px;
+				display: flex;
+				align-items: center;
+				color: #003F57;
+			}
+			&:before {
+				background: #00B2E7;
+			}
+		}
+	}
+}
+
+.content_Prodel_col12_motasp {
+	.content {
+		p {
+			font-family: Chakra Petch;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 23px;
+			display: flex;
+			align-items: center;
+			margin: 5px 0;
+			color: #003F57;
+		}
+	}
+}
+
+.site34_prodel_col12_enpis {
+	margin: 30px 0 70px 0;
+}
+
+.site34_pro {
+	overflow: hidden;
+}
+
+/* responsive */
+
+/* 1366 */
+@media screen and (max-width: 1400px) and (min-width: 1300px) {
+	.site34_html_col5_giatrinentang {
+		padding-right: 7%;
+	}
+	.box_nentang {
+		margin-top: 15px;
+	}
+	.site34_html_col5_giatrinentang > p {
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	}
+}
+
+/* 1024 */
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+	.site34_html_col9_csbh {
+		padding: 30px 0;
+	}
+	.item_download .content a {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 .img {
+		width: 100%;
+		height: 250px;
+	}
+	.site34_pro_col12_spdaxem {
+	    margin-top: 20px;
+	}
+	.slider_sp3 .item_product_sp3 .img {
+		width: 100%;
+		height: 200px;
+	}
+	.slider_sp3 .item_product_sp3 .content_sp3 .rank_sp3 {
+		display: inline-block;
+	}
+	.slider_sp3 .item_product_sp3 .content_sp3 .rank_sp3 span {
+		margin-left: 0;
+	}
+	.site34_pro_col12_sanpham3 {
+		overflow: hidden;
+	}
+	.site34_procat_col12_listdanhmucsp {
+		overflow: hidden;
+	}
+	.title_second {
+		padding-top: 20px;
+	}
+	.element_pro_col12_sanpham3 {
+	    margin: 30px -8px 0px -8px;
+	}
+	.site34_html_col5_giatrinentang {
+		padding-right: 2%;
+	}
+	.box_nentang {
+		margin-top: 15px;
+	}
+	.site34_html_col5_giatrinentang > p {
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	}
+	.box_nentang .item .img {
+	    width: 80px;
+	    height: 80px;
+	}
+	.box_nentang .item .content p {
+		display: -webkit-box;
+	    -webkit-line-clamp: 1;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	}
+	.box_nentang .item .content {
+	    width: calc(100% - 80px);
+	    padding-left: 15px;
+	}
+	.title_tab ul {
+		width: 65%;
+		flex-flow: row wrap;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 .img .sale_tag {
+		right: 20px;
+	}
+	.element_thank .list_btn .btn_quayve , .element_thank .list_btn .btn_inthongtin {
+		width: 48%;
+	}
+	.element_thank .list_btn {
+		padding: 0;
+	}
+
+}
+
+/* 992 */
+
+@media screen and (min-width: 992px) {
+	.icon_menu {
+		display: none;
+	}
+}
+ /* 992 */
+@media screen and (max-width: 991px) {
+	.site34_form_col6_dangnhap-image , .site3_form_col6_dangky-image {
+		display: none;
+	}
+	.site34_form_col6_dangky {
+		width: 100%;
+	}
+	.site34_form_col6_dangnhap {
+		width: 100%;
+	}
+	.site34_html_col9_csbh {
+		padding: 30px 0;
+	}
+	.item_download {
+		width: 100%;
+	}
+	.element_slider_video .item_video .box_img {
+		height: 350px;
+	}
+	.site34_procat_col12_listdanhmucsp {
+		overflow: hidden;
+	}
+	.title_second {
+		padding-top: 20px;
+	}
+	.element_pro_col12_sanpham3 {
+	    margin: 0px -8px 0px -8px;
+	}
+	.site34_pro_col12_sanpham4 {
+		margin-top: 20px;
+	}
+	.slider_sp3 .item_product_sp3 .img {
+		width: 100%;
+		height: 300px;
+	}
+	.slider_sp3 .item_product_sp3 .img .sale_tag {
+		right: 20px;
+	}
+	.icon_menu {
+		display: block;
+	    margin-left: 20px;
+	    font-family: Chakra Petch;
+	    font-style: normal;
+	    font-weight: 300;
+	    font-size: 18px;
+	    line-height: 23px;
+	    color: #02b2e7;
+	}
+	.main_menu .row {
+		position: relative;
+	}
+	.menu_item {
+		width: 100%;
+		margin-top: 30px;
+		display: none;
+	}
+	.main_menu.fixed_main_menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+	    background: #fff;
+	    box-shadow: 0 5px 10px #0000002b;
+	}
+	.menu_item.active {
+		display: block;
+	    position: absolute;
+	    z-index: 1000;
+	    background: #fff;
+	    left: -15px;
+	    top: 37px;
+	    border: 1px solid #02b2e759;
+	    width: calc(100% + 30px);
+	    height: 100vh;
+	}
+	.menu_item > ul > li {
+	    width: 100%;
+	    padding: 10px 0;
+	    border-bottom: 1px solid #02b2e759;
+	    position: relative;
+	}
+	.menu_item > ul > li:before {
+		position: absolute;
+		content: '';
+		width: 6px;
+		height: 6px;
+		border-top: 1px solid #02b2e7;
+		border-right: 1px solid #02b2e7;
+		transform: rotateZ(45deg);
+		right: 15px;
+		top: 20px;
+	}
+	.menu_item > ul > li:hover > ul {
+	    display: block;
+	    width: 100%;
+	    z-index: 10;
+	    position: inherit;
+	    margin-top: 0;
+	    padding-left: 15px;
+	}
+	.menu_item > ul > li > ul > li:hover > ul {
+	    display: block;
+	    transition: 0.5s;
+	    background: #00B2E7 !important;
+	    position: inherit;
+	    background: #fff;
+	    width: 100%;
+	    right: 0;
+	    top: inherit;
+	    margin-top: 15px;
+	}
+	.site34_form_col12_footer .row .footer_item {
+		width: 100% !important;
+		padding: 0 !important;
+		margin-bottom: 30px;
+	}
+	.site34_form_col12_footer .row .footer_item:nth-child(4) {
+		margin-bottom: 0;
+	}
+	.site34_form_col12_dangkynhantin .element_form p {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.site34_form_col12_dangkynhantin .element_form .form {
+		width: 100%;
+		padding-left: 0;
+	}
+	.site34_form_col12_dangkynhantin {
+		padding: 60px 0;
+	}
+	.site34_pro_col12_sanpham3 {
+		overflow: hidden;
+	}
+	.site34_html_col5_vechungtoi {
+	    width: 100%;
+	    padding-right: 0;
+	    overflow: hidden;
+	}
+	.site34_html_col6_vechungtoi-image-video {
+	    width: 100%;
+	    padding-left: 0;
+	    margin-top: 50px;
+	}
+	.site34_html_col12_giatrinentang .site34_html_col5_giatrinentang {
+	    position: inherit;
+	    top: 100%;
+	    right: inherit;
+	    transform: inherit;
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.site34_html_col12_giatrinentang > img {
+		display: none;
+	}
+	.site34_html_col12_giatrinentang {
+		padding: 0 8px;
+	}
+	.site34_Prodel_col6_hinhanhsp {
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.site34_Prodel_col6_hinhanhsp .slider_nav_pro .img {
+		height: 200px;
+	}
+	.site34_Prodel2_col6_thongtinsp {
+	    width: 100%;
+	    padding-left: 0;
+	    margin-top: 30px;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 {
+		width: 48.5%;
+	}
+	.title_tab ul {
+		width: 100%;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 .img .sale_tag {
+		right: 25px;
+	} 
+	.title_tab .select_option {
+	    position: inherit;
+	    right: inherit;
+	    top: inherit;
+	    transform: inherit;
+        width: 30%;
+	    float: right;
+	    margin-bottom: 30px;
+	    margin-top: 30px;
+	}
+	.site34_procat_col12_sanpham {
+	    padding: 30px 0;
+	    overflow: hidden;
+	}
+	.site34_htlm_col12_giohang ul li:before {
+		width: 255px;
+	}
+	.site34_cart1_col12_giohang table tr:last-child .btn_muahang , .site34_cart1_col12_giohang table tr:last-child .btn_xacnhan {
+		font-size: 20px;
+	}
+	.site34_cart1_col12_giohang table tr td a {
+		display: -webkit-box;
+	    -webkit-line-clamp: 1;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	}
+	.is-form {
+		width: 25px;
+		height: 25px;
+	}
+	.input-qty {
+		height: 25px;
+		font-size: 14px;
+	}
+	.element_thank .list_btn .btn_quayve , .element_thank .list_btn .btn_inthongtin {
+		width: 48%;
+		font-size: 16px;
+	}
+	.element_thank .list_btn {
+		padding: 0;
+	}
+	.item_new_tinmoi .content p {
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow-x: hidden;
+	}
+	.list_grid_video .gird_video_item {
+		width: 50%;
+	}
+	.list_grid_video {
+		justify-content: space-between;
+	}
+	.item_baiviet_style_2 .content a {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow-x: hidden;
+	}
+}
+
+/* 576 */
+
+@media screen and (max-width: 575px) {
+	.top_head {
+		padding: 13px 15px;
+	}
+	.list_link {
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.list_link a {
+		margin-right: 20px;
+	}
+	.top_head .row {
+		justify-content: space-between;
+	}
+	.form_search {
+		width: 70%;
+	}
+	.lang_list {
+		margin-left: 0;
+		width: 30%;
+		text-align: right;
+	}
+	.main_menu {
+	    padding: 12px 15px;
+	}
+	.logo_34 {
+		width: 25%;
+	    display: block;
+	    overflow: hidden;
+	}
+	.logo_34 img {
+		width: 100%;
+	}
+	.title_basic h2 {
+		font-size: 20px;
+	}
+	.title_basic p {
+		font-size: 16px;
+		width: 100%;
+	}
+	.site34_pro_col12_sanpham3 {
+	    padding: 30px 15px 0 15px;
+	}
+	.element_pro_col12_sanpham3 {
+	    margin: 20px -8px 0px -8px;
+	}
+	.slider_sp3 .item_product_sp3 .img {
+		width: 100%;
+		height: 320px;
+	}
+	.slider_sp3 .item_product_sp3 .img .sale_tag {
+		right: 25px;
+	}
+	.title_second {
+		padding: 10px 15px 0 15px;
+	}
+	.title_second .title {
+		width: 100%;
+	}
+	.title_second .list_title {
+	    margin: 15px 0 10px 0;
+	}
+	.title_second .btn_xemthem {
+		margin-right: auto;
+		margin-left: inherit;
+	}
+	.title_second .title h2 {
+		font-size: 20px;
+	}
+	.title_second .title img {
+		width: 25px;
+		height: 25px;
+	}
+	.site34_form_col12_dangkynhantin {
+		padding: 25px 15px;
+	}
+	.site34_form_col12_footer {
+	    padding: 20px 15px 0 15px;
+	}
+	.site34_icon_col12_iconlienhe {
+		right: 0;
+		bottom: 60px;
+	}
+	.icon_allpage {
+		right: 0;
+		bottom: 15px;
+	}
+	.element_breadcrumd {
+	    padding: 15px 15px 0 15px;
+	}
+	.site34_bann_col0_slidedanhmuc {
+		height: 200px;
+	}
+	.site34_bann_col0_slidedanhmuc img {
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	}
+	.site34_bann_col0_slidedanhmuc .container .breabcrumd_banner h2 {
+		font-size: 24px;
+	}
+	.site34_html_col0_gioithieu {
+		padding: 15px;
+	}
+	.site34_html_col12_giatrinentang {
+		padding: 0 15px 15px 15px;
+		margin-top: 80px;
+	}
+	.box_nentang .item .content {
+		padding-left: 15px;
+	}
+	.site34_Prodel_col6_hinhanhsp .slider_for_pro .img {
+		height: 300px;
+	}
+	.site34_Prodel_col6_hinhanhsp .slider_nav_pro .img {
+		height: 100px;
+	}
+	.site34_Prodel_col12_motasp ul li {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 {
+		width: 100%;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 .img {
+		width: 100%;
+		height: 300px;
+	}
+	.site34_procat_col12_sanpham_sp3 .item_product_sp3 .img .sale_tag {
+		right: 25px;
+	}
+	.site34_pro {
+		padding: 0 15px;
+	}
+	.site34_bann_col0_slidedanhmuc .container .breabcrumd_banner h2 {
+		text-align: center;
+	}
+	.title_tab ul li {
+		width: 100%;
+	}
+	.title_tab ul {
+		flex-flow: row wrap;
+	}
+	.title_tab .select_option {
+		width: 100%;
+	}
+	.site34_procat_col12_sanpham {
+		padding: 30px 15px;
+	}
+	.title_tab .select_option select {
+		width: 100%;
+	}
+	.site34_htlm_col12_giohang ul {
+		width: 100%;
+	}
+	.site34_htlm_col12_giohang ul li:before {
+		width: 160px;
+	}
+	.site34_cart {
+		padding: 30px 15px;
+	}
+	.site34_cart_col12_thanhtoan {
+		padding: 15px;
+	}
+	.site34_pay1_col12_thongtinthanhtoan {
+		margin: 30px 0;
+	}
+	.title_line h2 span {
+		font-size: 20px;
+	}
+	.title_line h2 {
+		padding: 4px 0;
+	}
+	.item_thanhtoan {
+		width: 100%;
+	}
+	.radio_check span label {
+	    width: calc(100% - 16px);
+	    padding-left: 15px;
+	}
+	.radio_check span {
+		display: flex;
+		align-items: start;
+	}
+	.title_icon {
+	    margin: 50px 0 25px 0;
+	    width: 100%;
+	    display: flex;
+	    align-items: start;
+	}
+	.title_icon h2 {
+	    width: calc(100% - 60px);
+	    font-size: 20px;
+	}
+	form.thongtinthanhtoan .site34_cart1_col12_giohang {
+		overflow-x: scroll;
+	}
+	.site34_cart1_col12_giohang table tr:last-child .btn_xacnhan {
+		padding: 15px;
+		font-size: 18px;
+	}
+	.element_thank .list_btn .btn_quayve , .element_thank .list_btn .btn_inthongtin {
+		width: 100%;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.element_thank .list_btn , .element_thank p , .element_thank h2 {
+		padding: 0;
+	}
+	.site34_html_col0_baohanh {
+	    padding: 30px 15px;
+	}
+	.site34_html_col0_baohanh .row .baohanh {
+		width: 100%;
+	}
+	.site34_html_col0_baohanh .row p:nth-child(1) {
+		padding: 0;
+	}
+	.item_new_tinmoi .img , .item_baiviet_style_2 .img {
+		width: 100%;
+		height: 300px;
+	}
+	.item_new_tinmoi .content , .item_baiviet_style_2 .content {
+		width: 100%;
+		padding-left: 0;
+		margin-top: 20px;
+	}
+	.list_grid_video .gird_video_item {
+		width: 100%;
+	}
+	.site34_news1_col6_baiviet {
+		width: 100%;
+	}
+	.title_img h2 {
+		font-size: 20px;
+	}
+	.site34_news2_col6_listtin {
+	    width: 100%;
+	    padding-left: 0;
+	}
+	.site34_new_col12_tinmoi , .site34_video_col12_video , .site34_newcat_col12_danhmuctin {
+		padding: 0 15px;
+		overflow: hidden;
+	}
+	.element_slider_video .item_video .box_img {
+		height: 250px;
+	} 
+	.element_slider_video {
+		width: 100%;
+	}
+	.item_download .img {
+		width: 100%;
+		height: 300px;
+	}
+	.item_download .content , .item_new_listtin_tinmoi .content {
+		width: 100%;
+		padding-left: 0;
+		margin-top: 20px;
+	}
+	.site34_file_col12_download {
+	    padding: 30px 15px;
+	}
+	.site34_new_col9_listtin , .site34_newscat_col3_danhmuctin , .site34_newdel_col9_enpis , .site34_html_col9_chinhsachbaohanh , .site34_menu_col3_danhmuchotro , .site34_menu_col9_hoidap , .site34_form_col6_guiycdenenpis , .site34_htlm_col6_googlemap {
+		width: 100%;
+		padding: 15px;
+	}
+	.item_new_listtin_tinmoi .img {
+		width: 100%;
+		height: 250px;
+	}
+	.faq_box .item .title p , .form_lichsudonhang tr td > a {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.contact_add p:nth-child(2), .contact_add p:nth-child(3) {
+		width: 100%;
+	}
+	.contact_add p span {
+		width: auto !important;
+	    margin-right: 15px;
+	}
+	.site34_form_col6_dangnhap , .site34_form_col6_dangky {
+		padding: 15px;
+	}
+	.site34_memu_col3_profile , .site34_htlm_col9_thongtintaikhoan {
+		width: 100%;
+	}
+	.form_donhangdamua tr {
+		display: grid;
+	}
+	.form_donhangdamua tr td .img {
+		width: 100%;
+		height: 300px;
+	}
+	.site34_orde_col12_lichsudonhang {
+		width: 100%;
+		padding: 15px;
+	}
+	.site34_form_col12_dangkynhantin .element_form .form form .btn_submit {
+		position: inherit;
+	    right: inherit;
+	    top: inherit;
+	    font-family: Chakra Petch;
+	    font-style: normal;
+	    font-weight: 600;
+	    font-size: 18px;
+	    line-height: 23px;
+	    border-radius: 10px;
+	    color: #003F57;
+	    width: 100%;
+	    height: 55px;
+	    border: none;
+	    text-align: center;
+	    margin-top: 15px;
+	}
+	.site34_form_col12_dangkynhantin .element_form .form form input {
+		height: 65px;
+		border-radius: 10px;
+	}
+	.site34_form_col12_dangkynhantin .element_form .form form {
+		height: auto;
+		background: transparent;
+	}
+	.form_lichsudonhang tr , .site34_cart1_col12_giohang table tr {
+		display: grid;
+	}
+	.form_lichsudonhang tr th {
+		width: 100% !important;
+	}
+	.form_lichsudonhang tr td {
+		padding: 0;
+	}
+	.form_lichsudonhang tr td:nth-child(1) {
+		padding-top: 15px;
+	}
+	.form_lichsudonhang tr td:last-child {
+		padding-bottom: 15px;
+	}
+	.site34_cart1_col12_giohang table tr th {
+		text-align: center;
+		border-bottom: 1px solid #fff;
+	}
+	.site34_cart1_col12_giohang table tr td .img {
+		width: 100%;
+		height: 250px;
+	}
+	.site34_cart1_col12_giohang table tr td .img .img_img {
+		width: 100%;
+		height: 100%;
+	}
+	.site34_cart1_col12_giohang table tr td .img .close_pro {
+		top: 15px;
+		right: 15px;
+	}
+	.site34_cart1_col12_giohang table tr td {
+		padding: 5px 0;
+	}
+	.site34_cart1_col12_giohang table tr td:nth-child(1) {
+		padding-top: 20px;
+	}
+	.site34_cart1_col12_giohang table tr td:last-child {
+		padding-bottom: 20px;
+	}
+	.site34_cart1_col12_giohang table tr.item_sum {
+		width: 100%;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: space-between;
+	    padding: 0 15px;
+	}
+	.site34_cart1_col12_giohang table tr.item_sum td {
+		padding: 8px 0 !important;
+	}
+	.site34_cart1_col12_giohang table tr:last-child .btn_xacnhan {
+		width: 100%;
+	}
 }
