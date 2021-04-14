@@ -5125,6 +5125,22 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
     top: 20px;
   }
 
+  .menu_item > ul > li:hover:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #02b2e7;
+    border-right: 1px solid #02b2e7;
+    transform: rotateZ(135deg);
+    right: 15px;
+    top: 20px;
+  }
+
+  .menu_item > ul > li > ul > li:hover:before {
+    transform: rotateZ(135deg);
+  }
+
   .menu_item > ul > li:hover > ul {
     display: block;
     width: 100%;
@@ -5785,5 +5801,15 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
 
   .site34_cart1_col12_giohang table tr:last-child .btn_xacnhan {
     width: 100%;
+  }
+
+  .form_lichsudonhang tr td .img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .form_lichsudonhang tr td:nth-child(2) {
+    padding-left: 0;
+    margin-top: 15px;
   }
 }
