@@ -1,3 +1,7 @@
+body {
+	line-height: 0;
+}
+
 a {
 	transition: 0.5s;
 	&:hover {
@@ -332,7 +336,7 @@ select , a , button {
 }
 
 .element_pro_col12_sanpham3 {
-	margin: 50px -8px 0px -8px;
+	margin: 35px -8px 0px -8px;
 }
 
 .slider_sp3 {
@@ -984,6 +988,7 @@ select , a , button {
 		    border-radius: 10px 10px 0px 0px;
 		    padding: 12px 40px;
 		    margin: 0 15px;
+		    transition: 0.5s;
 			a {
 				font-family: Chakra Petch;
 				font-style: normal;
@@ -991,6 +996,13 @@ select , a , button {
 				font-size: 24px;
 				line-height: 31px;
 				color: #003F57;
+				transition: 0.5s;
+			}
+			&:hover {
+				background: #02b2e7cc;
+				a {
+					color: #fff;
+				}
 			}
 		}
 		li.active {
@@ -1514,7 +1526,7 @@ select , a , button {
 
 /* site34_pro_col12_spdaxem */
 .site34_pro_col12_spdaxem {
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 .title_line {
@@ -1733,6 +1745,12 @@ form.thongtinthanhtoan {
 		    padding: 16px 83px;
 		    border-radius: 5px;
 		    background: transparent;
+		    transition: 0.5s;
+		    &:hover {
+			    color: #ffffff;
+			    border: 1px solid #1171b5;
+			    background: #1171b5;
+		    }
 		}
 		.btn_quayve {
 			font-family: Chakra Petch;
@@ -1747,6 +1765,10 @@ form.thongtinthanhtoan {
 			padding: 16px 83px;
 		    border-radius: 5px;
 		    float: right;
+		    transition: 0.5s;
+		    &:hover {
+			    background: #1573b6;
+		    }
 		}
 	}
 }
@@ -1824,6 +1846,10 @@ form.thongtinthanhtoan {
 				height: 55px;
 				border: none;
 				margin-top: 20px;
+				transition: 0.5s;
+				&:hover {
+				    background: #1372b6;
+				}
 			}
 		}
 	}
@@ -2528,6 +2554,7 @@ form.thongtinthanhtoan {
 	display: inline-block;
 	width: 70%;
 	float: left;
+	padding-right: 30px;
 	.item_new_listtin_tinmoi {
 		&:nth-child(1) {
 			padding-top: 0;
@@ -2642,8 +2669,16 @@ form.thongtinthanhtoan {
 			display: flex;
 			align-items: center;
 			color: #00B2E7;
+			transition: 0.5s;
 			img {
 				margin-left: 10px;
+				transition: 0.5s;
+			}
+			&:hover {
+				color: #0f71b4;
+				img {
+					margin-left: 25px;
+				}
 			}
 		}
 	}
@@ -2777,7 +2812,7 @@ form.thongtinthanhtoan {
 					top: 50%;
 					left: 50%;
 					transform: translate(-50% , -50%);
-					overflow: hidden;
+					/*overflow: hidden;*/
 					img {
 						max-width: 100%;
 					}
@@ -3496,8 +3531,12 @@ form.thongtinthanhtoan {
     border-radius: 5px;
     width: 126px;
     height: 40px;
+    transition: 0.5s;
     img {
     	margin-left: 10px;
+    }
+    &:hover {
+    	background: #1372b6;
     }
 }
 
@@ -3730,6 +3769,10 @@ form.thongtinthanhtoan {
 			width: 100%;
 			border: none;
 			height: 50px;
+			transition: 0.5s;
+			&:hover {
+				background: #1072b6;
+			}
 		}
 		> p {
 			font-family: Chakra Petch;
@@ -3923,6 +3966,10 @@ form.thongtinthanhtoan {
 			width: 100%;
 			border: none;
 			height: 50px;
+			transition: 0.5s;
+			&:hover {
+				background: #1072b6;
+			}
 		}
 		> p {
 			font-family: Chakra Petch;
@@ -4186,9 +4233,14 @@ form.thongtinthanhtoan {
     border: none;
     width: 190px;
     height: 50px;
+    transition: 0.5s;
+	&:hover {
+		background: #1072b6;
+	}
     img {
     	margin-right: 10px;
     }
+
 }
 
 /* site34_orde_col9_donhangdamua */
@@ -4647,6 +4699,7 @@ font-weight: 300; font-size: 18px; line-height: 23px;
 		color: #3C3C3C;
 		.icon-select-cmt{
 			position: relative;
+			margin-left: 20px;
 			img{
 				position: absolute;
 				top:50%;
@@ -4748,6 +4801,9 @@ font-weight: 300; font-size: 18px; line-height: 23px;
 	}
 	.slider_nav_pro {
 		margin-top: 15px;
+		.slick-list {
+			margin: 0 -8px;
+		}
 		.img {
 			overflow: hidden;
 			width: 112px;
@@ -4939,8 +4995,12 @@ font-weight: 300; font-size: 18px; line-height: 23px;
 		border: none;
 		justify-content: center;
 		margin-right: 20px;
+		transition: 0.5s;
 		img {
 			margin-left: 15px;
+		}
+		&:hover {
+			background: #ffbc00;
 		}
 	}
 }
@@ -5131,6 +5191,86 @@ font-weight: 300; font-size: 18px; line-height: 23px;
 .site34_pro {
 	overflow: hidden;
 }
+
+.circle {
+    border-radius: 50%;
+    transition: height 0.25s ease, width 0.25s ease;
+    /*transform: translate(-50%, -50%);*/
+    z-index: 6;
+    &:before {
+    	content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    bottom: 0;
+	    left: 0px;
+	    border-radius: 50%;
+	    border: 1px solid #fea6005e;
+	    animation: ripple 2.5s linear infinite;
+    }
+    &:after {
+    	content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: 50%;
+	    border: 1px solid #fea6005e;
+	    z-index: -1;
+	    animation: ripple 2s linear 1s infinite;
+    }
+}
+
+.circle1 {
+    border-radius: 50%;
+    transition: height 0.25s ease, width 0.25s ease;
+    /*transform: translate(-50%, -50%);*/
+    z-index: 6;
+    &:before {
+    	content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    bottom: 0;
+	    left: 0px;
+	    border-radius: 50%;
+	    border: 1px solid #108cb1a3;
+	    animation: ripple 2.5s linear infinite;
+    }
+    &:after {
+    	content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: 50%;
+	    border: 1px solid #108cb1a3;
+	    z-index: -1;
+	    animation: ripple 2s linear 1s infinite;
+    }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.25);
+    opacity: 0;
+  }
+}
+
+
 
 /* responsive */
 

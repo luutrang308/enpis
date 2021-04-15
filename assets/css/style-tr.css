@@ -1,3 +1,7 @@
+body {
+  line-height: 0;
+}
+
 a {
   transition: 0.5s;
 }
@@ -317,7 +321,7 @@ select:focus, a:focus, button:focus {
 }
 
 .element_pro_col12_sanpham3 {
-  margin: 50px -8px 0px -8px;
+  margin: 35px -8px 0px -8px;
 }
 
 .slider_sp3 {
@@ -938,6 +942,7 @@ select:focus, a:focus, button:focus {
   border-radius: 10px 10px 0px 0px;
   padding: 12px 40px;
   margin: 0 15px;
+  transition: 0.5s;
 }
 .title_tab ul li a {
   font-family: Chakra Petch;
@@ -946,6 +951,13 @@ select:focus, a:focus, button:focus {
   font-size: 24px;
   line-height: 31px;
   color: #003F57;
+  transition: 0.5s;
+}
+.title_tab ul li:hover {
+  background: #02b2e7cc;
+}
+.title_tab ul li:hover a {
+  color: #fff;
 }
 .title_tab ul li.active {
   background: #00B2E7;
@@ -1453,7 +1465,7 @@ select:focus, a:focus, button:focus {
 
 /* site34_pro_col12_spdaxem */
 .site34_pro_col12_spdaxem {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .title_line {
@@ -1665,6 +1677,12 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   padding: 16px 83px;
   border-radius: 5px;
   background: transparent;
+  transition: 0.5s;
+}
+.element_thank .list_btn .btn_inthongtin:hover {
+  color: #ffffff;
+  border: 1px solid #1171b5;
+  background: #1171b5;
 }
 .element_thank .list_btn .btn_quayve {
   font-family: Chakra Petch;
@@ -1679,6 +1697,10 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   padding: 16px 83px;
   border-radius: 5px;
   float: right;
+  transition: 0.5s;
+}
+.element_thank .list_btn .btn_quayve:hover {
+  background: #1573b6;
 }
 
 /* site34_html_col0_baohanh */
@@ -1753,6 +1775,10 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   height: 55px;
   border: none;
   margin-top: 20px;
+  transition: 0.5s;
+}
+.site34_html_col0_baohanh .row .baohanh .btn_tracuu:hover {
+  background: #1372b6;
 }
 
 .form_thongtin_popup {
@@ -2403,6 +2429,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   display: inline-block;
   width: 70%;
   float: left;
+  padding-right: 30px;
 }
 .site34_new_col9_listtin .item_new_listtin_tinmoi:nth-child(1) {
   padding-top: 0;
@@ -2509,9 +2536,17 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   display: flex;
   align-items: center;
   color: #00B2E7;
+  transition: 0.5s;
 }
 .item_new_listtin_tinmoi .content .btn_xemthem img {
   margin-left: 10px;
+  transition: 0.5s;
+}
+.item_new_listtin_tinmoi .content .btn_xemthem:hover {
+  color: #0f71b4;
+}
+.item_new_listtin_tinmoi .content .btn_xemthem:hover img {
+  margin-left: 25px;
 }
 
 /* site34_newscat_col3_danhmuctin */
@@ -2638,7 +2673,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .element_slider_video .item_video .box_img .img .img_play img {
   max-width: 100%;
@@ -3314,9 +3349,13 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   border-radius: 5px;
   width: 126px;
   height: 40px;
+  transition: 0.5s;
 }
 .btn_taifile img {
   margin-left: 10px;
+}
+.btn_taifile:hover {
+  background: #1372b6;
 }
 
 /* site34_html_col6_vechungtoi-image-video */
@@ -3543,6 +3582,10 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   width: 100%;
   border: none;
   height: 50px;
+  transition: 0.5s;
+}
+.site34_form_col6_dangnhap .danhnhap_form .btn_dangnhap:hover {
+  background: #1072b6;
 }
 .site34_form_col6_dangnhap .danhnhap_form > p {
   font-family: Chakra Petch;
@@ -3727,6 +3770,10 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   width: 100%;
   border: none;
   height: 50px;
+  transition: 0.5s;
+}
+.site34_form_col6_dangky .danhnhap_form .btn_dangnhap:hover {
+  background: #1072b6;
 }
 .site34_form_col6_dangky .danhnhap_form > p {
   font-family: Chakra Petch;
@@ -3978,6 +4025,10 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   border: none;
   width: 190px;
   height: 50px;
+  transition: 0.5s;
+}
+.btn_capnhathoso:hover {
+  background: #1072b6;
 }
 .btn_capnhathoso img {
   margin-right: 10px;
@@ -4432,6 +4483,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
 }
 .number-cmt .select-comt .icon-select-cmt {
   position: relative;
+  margin-left: 20px;
 }
 .number-cmt .select-comt .icon-select-cmt img {
   position: absolute;
@@ -4527,6 +4579,9 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
 }
 .site34_Prodel_col6_hinhanhsp .slider_nav_pro {
   margin-top: 15px;
+}
+.site34_Prodel_col6_hinhanhsp .slider_nav_pro .slick-list {
+  margin: 0 -8px;
 }
 .site34_Prodel_col6_hinhanhsp .slider_nav_pro .img {
   overflow: hidden;
@@ -4710,9 +4765,13 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   border: none;
   justify-content: center;
   margin-right: 20px;
+  transition: 0.5s;
 }
 .btn_pro .btn_muahang img {
   margin-left: 15px;
+}
+.btn_pro .btn_muahang:hover {
+  background: #ffbc00;
 }
 
 .list_btn_pro {
@@ -4892,6 +4951,83 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   overflow: hidden;
 }
 
+.circle {
+  border-radius: 50%;
+  transition: height 0.25s ease, width 0.25s ease;
+  /*transform: translate(-50%, -50%);*/
+  z-index: 6;
+}
+.circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid #fea6005e;
+  animation: ripple 2.5s linear infinite;
+}
+.circle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #fea6005e;
+  z-index: -1;
+  animation: ripple 2s linear 1s infinite;
+}
+
+.circle1 {
+  border-radius: 50%;
+  transition: height 0.25s ease, width 0.25s ease;
+  /*transform: translate(-50%, -50%);*/
+  z-index: 6;
+}
+.circle1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid #108cb1a3;
+  animation: ripple 2.5s linear infinite;
+}
+.circle1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #108cb1a3;
+  z-index: -1;
+  animation: ripple 2s linear 1s infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.25);
+    opacity: 0;
+  }
+}
 /* responsive */
 /* 1366 */
 @media screen and (max-width: 1400px) and (min-width: 1300px) {
