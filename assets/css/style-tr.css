@@ -342,10 +342,12 @@ select:focus, a:focus, button:focus {
   left: 8px;
   z-index: 1;
   opacity: 1;
+  top: 42%;
 }
 .slider_sp3:hover .slick-next {
   right: 20px;
   opacity: 1;
+  top: 42%;
 }
 .slider_sp3 .slick-slide {
   margin: 0 8px;
@@ -1284,7 +1286,7 @@ select:focus, a:focus, button:focus {
 .site34_cart1_col12_giohang table tr th {
   font-family: Chakra Petch;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: #003F57;
@@ -1356,7 +1358,7 @@ select:focus, a:focus, button:focus {
 .site34_cart1_col12_giohang table tr p input {
   padding: 10px 15px;
   border-radius: 5px;
-  border: 1px solid rgba(0, 63, 87, 0.4);
+  border: 0.5px solid #E5E5E5;
 }
 .site34_cart1_col12_giohang table tr p input::placeholder {
   color: rgba(0, 63, 87, 0.4);
@@ -1850,7 +1852,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  padding: 10px 0;
+  padding: 10px 15px;
   color: #003F57;
   text-align: center;
 }
@@ -2606,7 +2608,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
 
 /* site34_video_col12_video */
 .site34_video_col12_video .element_video {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .element_slider_video {
@@ -2620,6 +2622,9 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   opacity: 0;
   top: 39%;
 }
+.element_slider_video .slick-prev img, .element_slider_video .slick-next img {
+  filter: invert(0.7);
+}
 .element_slider_video .slick-prev:before, .element_slider_video .slick-next:before {
   font-size: 40px;
   display: none;
@@ -2630,7 +2635,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   opacity: 1;
 }
 .element_slider_video:hover .slick-next {
-  right: 20px;
+  right: 22px;
   opacity: 1;
 }
 .element_slider_video .slick-slide {
@@ -3261,6 +3266,9 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   border-radius: 5px;
   height: 52px;
 }
+.form_contact .btn_guiyeucau img {
+  margin-left: 20px;
+}
 
 .site34_htlm_col6_googlemap {
   width: 50%;
@@ -3525,7 +3533,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   right: 15px;
   top: 25%;
   background: #fff;
-  z-index: 100;
+  z-index: 1;
 }
 .site34_form_col6_dangnhap .danhnhap_form span input {
   width: 100%;
@@ -3881,7 +3889,7 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
 }
 .list_thongtintaikhoan ul li {
   display: flex;
-  margin: 11px 0;
+  margin: 20px 0;
 }
 .list_thongtintaikhoan ul li span {
   display: block;
@@ -5951,5 +5959,62 @@ form.thongtinthanhtoan .site34_cart1_col12_giohang table tr.item_sum td:last-chi
   .form_lichsudonhang tr td:nth-child(2) {
     padding-left: 0;
     margin-top: 15px;
+  }
+
+  .site34_foot_col0_enpis {
+    margin-top: 30px;
+  }
+
+  .site34_form_col12_footer .row .footer_item .logo_ft img, .site34_form_col12_footer .row .footer_item .list_code img {
+    max-width: 50%;
+  }
+
+  .site34_form_col12_footer .row .footer_item .list_code {
+    justify-content: flex-start;
+  }
+
+  .site34_htlm_col12_giohang ul li p {
+    font-size: 18px;
+  }
+
+  .site34_cart1_col12_giohang table tr:last-child td {
+    padding: 15px 0 0 0;
+  }
+
+  .site34_cart1_col12_giohang table tr:last-child .btn_xacnhan {
+    padding: 16px 15px;
+  }
+
+  .form_thongtin_popup .box_item {
+    width: 95%;
+  }
+
+  .form_thongtin_popup .box_item > h2 {
+    width: 75%;
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .form_thongtin_popup .box_item .item table tr {
+    display: grid;
+  }
+
+  .form_thongtin_popup .box_item .item table tr td {
+    padding: 5px 0;
+    border-bottom: 1px solid #02b2e7;
+  }
+
+  .form_thongtin_popup .box_item .item table tr th {
+    padding: 5px 0;
+    border-bottom: 1px solid #02b2e7;
+  }
+
+  .form_thongtin_popup .box_item .item {
+    overflow-y: scroll;
+    height: 300px;
+  }
+
+  .element_slider_video .item_video .box_content .date img {
+    margin-right: 5px;
   }
 }
